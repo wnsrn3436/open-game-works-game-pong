@@ -1,0 +1,17 @@
+,,,,
+All,Client,Client,Client,Client
+id(key),enum<InputPromptFamily>,string,reskey?,tstring<id>
+id,family,input,icon,name
+[prompt_key_w],KeyboardMouse,W,null,W
+[prompt_key_s],KeyboardMouse,S,null,S
+[prompt_key_up],KeyboardMouse,Up,null,↑
+[prompt_key_down],KeyboardMouse,Down,null,↓
+[prompt_key_p],KeyboardMouse,P,null,P
+[prompt_key_escape],KeyboardMouse,Escape,null,Esc
+[prompt_pad_dpad_up],Generic,dpad_up,null,십자키 위
+[prompt_pad_dpad_down],Generic,dpad_down,null,십자키 아래
+[prompt_pad_start],Generic,start,null,Start
+[prompt_pad_b],Generic,b,null,B
+[prompt_touch_move_up],Touch,move_up,null,W
+[prompt_touch_move_down],Touch,move_down,null,S
+[prompt_touch_pause],Touch,pause,null,P

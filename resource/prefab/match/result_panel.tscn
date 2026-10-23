@@ -1,0 +1,232 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://features/match/match_result_panel.gd" id="1_script"]
+[ext_resource type="Script" path="res://core/ui_core/ui_button.gd" id="2_script"]
+[ext_resource type="Script" path="res://core/ui_core/ui_anchor.gd" id="3_script"]
+
+[sub_resource type="StyleBoxFlat" id="btn_normal"]
+content_margin_left = 24.0
+content_margin_right = 24.0
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.106, 0.141, 0.251, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.302, 0.824, 1, 0.75)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="btn_hover"]
+content_margin_left = 24.0
+content_margin_right = 24.0
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.141, 0.192, 0.353, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.302, 0.824, 1, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="btn_pressed"]
+content_margin_left = 24.0
+content_margin_right = 24.0
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.059, 0.09, 0.188, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.827, 0.302, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="btn_focus"]
+draw_center = false
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.827, 0.302, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 6.0
+expand_margin_top = 6.0
+expand_margin_right = 6.0
+expand_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxFlat" id="frame"]
+bg_color = Color(0.067, 0.09, 0.149, 0.97)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.302, 0.824, 1, 0.35)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="plate"]
+content_margin_left = 28.0
+content_margin_right = 28.0
+content_margin_top = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.043, 0.059, 0.102, 0.82)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[node name="ResultPanel" type="Control" node_paths=PackedStringArray("initial_focus", "title_label", "score_label", "rally_label", "best_label", "record_label", "rematch_button", "menu_button", "rematch_click", "menu_click")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+back_policy = 2
+dim = true
+initial_focus = NodePath("Frame/Box/Buttons/Rematch")
+title_label = NodePath("Frame/Box/Title")
+score_label = NodePath("Frame/Box/Score")
+rally_label = NodePath("Frame/Box/Rally")
+best_label = NodePath("Frame/Box/Best")
+record_label = NodePath("Frame/Box/Record")
+rematch_button = NodePath("Frame/Box/Buttons/Rematch")
+menu_button = NodePath("Frame/Box/Buttons/Menu")
+rematch_click = NodePath("Frame/Box/Buttons/Rematch/UIButton")
+menu_click = NodePath("Frame/Box/Buttons/Menu/UIButton")
+
+[node name="Frame" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -390.0
+offset_right = 500.0
+offset_bottom = 390.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("frame")
+
+[node name="Box" type="VBoxContainer" parent="Frame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_left = 48.0
+offset_top = 40.0
+offset_right = -48.0
+offset_bottom = -40.0
+theme_override_constants/separation = 14
+alignment = 1
+
+[node name="Title" type="Label" parent="Frame/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_font_sizes/font_size = 120
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="Frame/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_font_sizes/font_size = 84
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rally" type="Label" parent="Frame/Box"]
+layout_mode = 2
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.62, 0.66, 0.75, 1)
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Best" type="Label" parent="Frame/Box"]
+layout_mode = 2
+autowrap_mode = 3
+theme_override_colors/font_color = Color(1, 0.827, 0.302, 1)
+theme_override_font_sizes/font_size = 38
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Record" type="Label" parent="Frame/Box"]
+layout_mode = 2
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gap" type="Control" parent="Frame/Box"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Buttons" type="HBoxContainer" parent="Frame/Box"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="Rematch" type="Button" parent="Frame/Box/Buttons"]
+custom_minimum_size = Vector2(400, 104)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_colors/font_hover_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
+theme_override_colors/font_focus_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_font_sizes/font_size = 46
+theme_override_styles/normal = SubResource("btn_normal")
+theme_override_styles/hover = SubResource("btn_hover")
+theme_override_styles/pressed = SubResource("btn_pressed")
+theme_override_styles/focus = SubResource("btn_focus")
+
+[node name="UIButton" type="Node" parent="Frame/Box/Buttons/Rematch"]
+script = ExtResource("2_script")
+
+[node name="UIAnchor" type="Node" parent="Frame/Box/Buttons/Rematch"]
+script = ExtResource("3_script")
+anchor_name = "result_rematch"
+
+[node name="Menu" type="Button" parent="Frame/Box/Buttons"]
+custom_minimum_size = Vector2(320, 104)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_colors/font_hover_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
+theme_override_colors/font_focus_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("btn_normal")
+theme_override_styles/hover = SubResource("btn_hover")
+theme_override_styles/pressed = SubResource("btn_pressed")
+theme_override_styles/focus = SubResource("btn_focus")
+
+[node name="UIButton" type="Node" parent="Frame/Box/Buttons/Menu"]
+script = ExtResource("2_script")
+
+[node name="UIAnchor" type="Node" parent="Frame/Box/Buttons/Menu"]
+script = ExtResource("3_script")
+anchor_name = "result_menu"

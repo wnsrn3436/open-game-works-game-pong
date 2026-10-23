@@ -1,0 +1,18 @@
+syntax = "proto3";
+package game;
+
+import "ogw/options.proto";
+
+service Game {
+}
+
+// The result of one finished match against the CPU. The client simulation decides it; `verify_play_session` checks
+// it against `[points_to_win]` and `[rally_max]` before `apply_play_session` counts it in the record.
+message PlaySessionResult {
+  // Points the player scored. The winner has exactly `[points_to_win]`.
+  int32 player_score = 1 [(ogw.v) = {min: 0, max: 99}];
+  // Points the CPU scored.
+  int32 cpu_score = 2 [(ogw.v) = {min: 0, max: 99}];
+  // Paddle hits of the longest rally of the match.
+  int32 longest_rally = 3 [(ogw.v) = {min: 0, max: 100000}];
+}

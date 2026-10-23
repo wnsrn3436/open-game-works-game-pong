@@ -1,0 +1,158 @@
+key,source,source_hash,current_hash,text
+input_prompt.name.[prompt_key_down],↓,07a2abcd3189716d,07a2abcd3189716d,↓
+input_prompt.name.[prompt_key_escape],Esc,52f878edb34fa14f,52f878edb34fa14f,Esc
+input_prompt.name.[prompt_key_p],P,5c62e091b8c0565f,5c62e091b8c0565f,P
+input_prompt.name.[prompt_key_s],S,8de0b3c47f112c59,8de0b3c47f112c59,S
+input_prompt.name.[prompt_key_up],↑,d2e966bf8db85620,d2e966bf8db85620,↑
+input_prompt.name.[prompt_key_w],W,fcb5f40df9be6bae,fcb5f40df9be6bae,W
+input_prompt.name.[prompt_pad_b],B,df7e70e5021544f4,df7e70e5021544f4,B
+input_prompt.name.[prompt_pad_dpad_down],십자키 아래,4d81ef13d0713c5d,4d81ef13d0713c5d,십자키 아래
+input_prompt.name.[prompt_pad_dpad_up],십자키 위,60eebf8cb06aa832,60eebf8cb06aa832,십자키 위
+input_prompt.name.[prompt_pad_start],Start,e4bb9f1ece9af926,e4bb9f1ece9af926,Start
+input_prompt.name.[prompt_touch_move_down],S,8de0b3c47f112c59,8de0b3c47f112c59,S
+input_prompt.name.[prompt_touch_move_up],W,fcb5f40df9be6bae,fcb5f40df9be6bae,W
+input_prompt.name.[prompt_touch_pause],P,5c62e091b8c0565f,5c62e091b8c0565f,P
+language.name.[lang_en],English,ba118bf7fc9c1aed,ba118bf7fc9c1aed,English
+language.name.[lang_ko],한국어,ea3252281bc3bcec,ea3252281bc3bcec,한국어
+reserved_string.text.[app_name],패들 듀얼,227b9e186ee6a299,227b9e186ee6a299,패들 듀얼
+reserved_string.text.[auth_age_confirm],확인,1aacb54c49924296,1aacb54c49924296,확인
+reserved_string.text.[auth_age_invalid],올바른 연도와 월을 입력하세요.,5b3a53405171535b,5b3a53405171535b,올바른 연도와 월을 입력하세요.
+reserved_string.text.[auth_age_month],월,ed8a406d02b187b8,ed8a406d02b187b8,월
+reserved_string.text.[auth_age_title],태어난 연도와 월을 입력하세요,55de38dd31149ce7,55de38dd31149ce7,태어난 연도와 월을 입력하세요
+reserved_string.text.[auth_age_year],연도,afd218a26904f527,afd218a26904f527,연도
+reserved_string.text.[auth_deletion_back],뒤로,2df06869205b07fe,2df06869205b07fe,뒤로
+reserved_string.text.[auth_deletion_body],게임에서 받은 사용자 ID와 삭제 코드를 입력하세요.,55eb5264f9b60fa1,55eb5264f9b60fa1,게임에서 받은 사용자 ID와 삭제 코드를 입력하세요.
+reserved_string.text.[auth_deletion_code],삭제 코드,f1fee09ca28dbb39,f1fee09ca28dbb39,삭제 코드
+reserved_string.text.[auth_deletion_confirm],삭제한 데이터는 되돌릴 수 없다는 것을 이해했습니다.,611a6cb9cb15b714,611a6cb9cb15b714,삭제한 데이터는 되돌릴 수 없다는 것을 이해했습니다.
+reserved_string.text.[auth_deletion_done],계정 삭제를 요청했습니다.,a83d15176d635fa1,a83d15176d635fa1,계정 삭제를 요청했습니다.
+reserved_string.text.[auth_deletion_failed],계정을 삭제하지 못했습니다.,f2132aeb0e296baf,f2132aeb0e296baf,계정을 삭제하지 못했습니다.
+reserved_string.text.[auth_deletion_google],Google 로그인으로 삭제,2a1cfc17fc383602,2a1cfc17fc383602,Google 로그인으로 삭제
+reserved_string.text.[auth_deletion_rate_limited],시도가 너무 많습니다. 잠시 뒤 다시 시도하세요.,bc192b22d39dbdfc,bc192b22d39dbdfc,시도가 너무 많습니다. 잠시 뒤 다시 시도하세요.
+reserved_string.text.[auth_deletion_retry],다시 시도,196856a662bd9084,196856a662bd9084,다시 시도
+reserved_string.text.[auth_deletion_submit],삭제,6139b6c3ed73cd4a,6139b6c3ed73cd4a,삭제
+reserved_string.text.[auth_deletion_title],계정 삭제,07051913f67d3a7e,07051913f67d3a7e,계정 삭제
+reserved_string.text.[auth_deletion_user_id],사용자 ID,85f6a450a02dcda1,85f6a450a02dcda1,사용자 ID
+reserved_string.text.[auth_go_to_title],타이틀로,ebf1eb5c33b7d645,ebf1eb5c33b7d645,타이틀로
+reserved_string.text.[auth_google_desktop_done],로그인이 끝났습니다. 게임으로 돌아가세요.,778b373ddaab6ecf,778b373ddaab6ecf,로그인이 끝났습니다. 게임으로 돌아가세요.
+reserved_string.text.[auth_privacy_ad_personalization],맞춤 광고,c2f59f8ae2b8a3b0,c2f59f8ae2b8a3b0,맞춤 광고
+reserved_string.text.[auth_privacy_analytics],이용 분석,5a15c8aaef16f97e,5a15c8aaef16f97e,이용 분석
+reserved_string.text.[auth_privacy_confirm],확인,1aacb54c49924296,1aacb54c49924296,확인
+reserved_string.text.[auth_privacy_title],개인정보 선택,84908379872ae75e,84908379872ae75e,개인정보 선택
+reserved_string.text.[auth_push_ad],이벤트와 혜택 알림,4568890021b8c58a,4568890021b8c58a,이벤트와 혜택 알림
+reserved_string.text.[auth_push_ad_denied],{date:date}에 이벤트와 혜택 알림을 거부했습니다.,0da5e6a9ec10c1cf,0da5e6a9ec10c1cf,{date:date}에 이벤트와 혜택 알림을 거부했습니다.
+reserved_string.text.[auth_push_ad_granted],{date:date}에 이벤트와 혜택 알림에 동의했습니다.,b7d1de542d1bc183,b7d1de542d1bc183,{date:date}에 이벤트와 혜택 알림에 동의했습니다.
+reserved_string.text.[auth_push_confirm],확인,1aacb54c49924296,1aacb54c49924296,확인
+reserved_string.text.[auth_push_night],야간 알림,d3d0a6b97d797326,d3d0a6b97d797326,야간 알림
+reserved_string.text.[auth_push_night_denied],{date:date}에 야간 알림을 거부했습니다.,7c492972f8d50e68,7c492972f8d50e68,{date:date}에 야간 알림을 거부했습니다.
+reserved_string.text.[auth_push_night_granted],{date:date}에 야간 알림에 동의했습니다.,8c758602e72fc4e9,8c758602e72fc4e9,{date:date}에 야간 알림에 동의했습니다.
+reserved_string.text.[auth_push_title],알림,12ddd6ca69068faa,12ddd6ca69068faa,알림
+reserved_string.text.[auth_recover_back],뒤로,2df06869205b07fe,2df06869205b07fe,뒤로
+reserved_string.text.[auth_recover_guest],게스트 계정을 찾을 수 없습니다.,f43c118ab28d466f,f43c118ab28d466f,게스트 계정을 찾을 수 없습니다.
+reserved_string.text.[auth_recover_linked],연동한 계정으로 로그인,6643e551a57c3b05,6643e551a57c3b05,연동한 계정으로 로그인
+reserved_string.text.[auth_recover_login_apple],Apple로 로그인,8a40ed8920ed2b84,8a40ed8920ed2b84,Apple로 로그인
+reserved_string.text.[auth_recover_login_google],Google로 로그인,9404977fe76e6108,9404977fe76e6108,Google로 로그인
+reserved_string.text.[auth_recover_new],새 계정으로 시작,391c1e0bebe1c8d9,391c1e0bebe1c8d9,새 계정으로 시작
+reserved_string.text.[auth_recover_new_confirm],새 계정은 이전 계정으로 돌아갈 수 없습니다. 새 계정으로 시작할까요?,d29f1ca7c446fd76,d29f1ca7c446fd76,새 계정은 이전 계정으로 돌아갈 수 없습니다. 새 계정으로 시작할까요?
+reserved_string.text.[auth_recover_new_ok],시작,b1f28cd21af730b2,b1f28cd21af730b2,시작
+reserved_string.text.[auth_session_replaced],다른 기기에서 이 계정으로 로그인했습니다.,c3bfd2dedf77252c,c3bfd2dedf77252c,다른 기기에서 이 계정으로 로그인했습니다.
+reserved_string.text.[auth_terms_agree_privacy],개인정보 처리방침에 동의합니다,87308a9cf9e514f1,87308a9cf9e514f1,개인정보 처리방침에 동의합니다
+reserved_string.text.[auth_terms_agree_terms],이용약관에 동의합니다,13d71aa6479818a6,13d71aa6479818a6,이용약관에 동의합니다
+reserved_string.text.[auth_terms_confirm],확인,1aacb54c49924296,1aacb54c49924296,확인
+reserved_string.text.[auth_terms_title],이용약관 동의,82a919ac73cb9367,82a919ac73cb9367,이용약관 동의
+reserved_string.text.[auth_terms_view],보기,ac5b575fff0fa065,ac5b575fff0fa065,보기
+reserved_string.text.[auth_tracking_usage],사용자에게 맞는 광고를 보이는 데 데이터를 사용합니다.,a1cbc994d5fc9fa2,a1cbc994d5fc9fa2,사용자에게 맞는 광고를 보이는 데 데이터를 사용합니다.
+reserved_string.text.[auth_web_link_body],진행 상황을 지키려면 계정을 연동하세요.,26228fbebb952ee9,26228fbebb952ee9,진행 상황을 지키려면 계정을 연동하세요.
+reserved_string.text.[auth_web_link_failed],계정을 연동하지 못했습니다.,86f5fbeb19b8ef2b,86f5fbeb19b8ef2b,계정을 연동하지 못했습니다.
+reserved_string.text.[auth_web_link_google],Google 계정 연동,9acaed794c215d3c,9acaed794c215d3c,Google 계정 연동
+reserved_string.text.[auth_web_link_later],나중에,a12252500035668f,a12252500035668f,나중에
+reserved_string.text.[bootstrap_age_blocked],이 나이에는 이 게임을 이용할 수 없습니다.,c2a04b5c97e36f72,c2a04b5c97e36f72,이 나이에는 이 게임을 이용할 수 없습니다.
+reserved_string.text.[bootstrap_banned],사용자 {user_id}의 이용이 {until_at:datetime}까지 제한되었습니다. 자세히: {url},d6a3d0efe4190174,d6a3d0efe4190174,사용자 {user_id}의 이용이 {until_at:datetime}까지 제한되었습니다. 자세히: {url}
+reserved_string.text.[bootstrap_banned_deletion],계정 삭제 요청,de7f6a00aed6d1f3,de7f6a00aed6d1f3,계정 삭제 요청
+reserved_string.text.[bootstrap_banned_deletion_code],사용자 {user_id}: {expires_at:datetime} 전에 {url}에서 코드 {code}를 입력하세요.,4db23020009349b0,4db23020009349b0,사용자 {user_id}: {expires_at:datetime} 전에 {url}에서 코드 {code}를 입력하세요.
+reserved_string.text.[bootstrap_banned_deletion_failed],삭제 코드를 받지 못했습니다.,3bb73ea5715cd650,3bb73ea5715cd650,삭제 코드를 받지 못했습니다.
+reserved_string.text.[bootstrap_banned_permanent],사용자 {user_id}의 이용이 제한되었습니다. 자세히: {url},a3db2da77b390862,a3db2da77b390862,사용자 {user_id}의 이용이 제한되었습니다. 자세히: {url}
+reserved_string.text.[bootstrap_fatal_error],오류로 게임이 멈췄습니다.,a3bdb0beee2103ce,a3bdb0beee2103ce,오류로 게임이 멈췄습니다.
+reserved_string.text.[bootstrap_login_failed],로그인하지 못했습니다.,b42ac90bab1504c0,b42ac90bab1504c0,로그인하지 못했습니다.
+reserved_string.text.[bootstrap_restart],다시 시작,c0128255dc47e432,c0128255dc47e432,다시 시작
+reserved_string.text.[common_terms_agree_all],모두 동의합니다,78ed5c87b18e680f,78ed5c87b18e680f,모두 동의합니다
+reserved_string.text.[common_terms_agree_both],두 항목에 모두 동의하면 시작할 수 있어요,770ce18e008caf38,770ce18e008caf38,두 항목에 모두 동의하면 시작할 수 있어요
+reserved_string.text.[game_update_app_update_required],새 버전의 앱이 필요합니다.,3f06e6b9758a2b0d,3f06e6b9758a2b0d,새 버전의 앱이 필요합니다.
+reserved_string.text.[game_update_data_update_required],새 게임 데이터가 필요합니다. 게임을 다시 시작합니다.,052928483452b213,052928483452b213,새 게임 데이터가 필요합니다. 게임을 다시 시작합니다.
+reserved_string.text.[game_update_download_failed],내려받지 못했습니다.,9be8cf113c49f275,9be8cf113c49f275,내려받지 못했습니다.
+reserved_string.text.[game_update_go_to_store],스토어로 이동,88c289b95c8d3173,88c289b95c8d3173,스토어로 이동
+reserved_string.text.[game_update_invalid_file],내려받은 파일이 손상되었습니다.,63be79a76e3b52a2,63be79a76e3b52a2,내려받은 파일이 손상되었습니다.
+reserved_string.text.[game_update_later],나중에,a12252500035668f,a12252500035668f,나중에
+reserved_string.text.[game_update_no_space],저장 공간이 부족합니다.,67e613722c809957,67e613722c809957,저장 공간이 부족합니다.
+reserved_string.text.[game_update_recommended],새 버전의 앱이 있습니다.,a7fca7bdb4d895d6,a7fca7bdb4d895d6,새 버전의 앱이 있습니다.
+reserved_string.text.[game_update_restart],다시 시작,c0128255dc47e432,c0128255dc47e432,다시 시작
+reserved_string.text.[game_update_retry],다시 시도,196856a662bd9084,196856a662bd9084,다시 시도
+reserved_string.text.[game_update_save_failed],내려받은 파일을 저장하지 못했습니다.,222b3d6311f8ff66,222b3d6311f8ff66,내려받은 파일을 저장하지 못했습니다.
+reserved_string.text.[loading_text],불러오는 중,5b7e88929ec0ed88,5b7e88929ec0ed88,불러오는 중
+reserved_string.text.[match_controls_hint],{action:move_up} {action:move_down} 로 패들을 움직이세요,6c7b35e1f012bd26,6c7b35e1f012bd26,{action:move_up} {action:move_down} 로 패들을 움직이세요
+reserved_string.text.[match_cpu],CPU,db9a4c7d4c195ebf,db9a4c7d4c195ebf,CPU
+reserved_string.text.[match_pause_title],일시정지,4f51c0c8ada89f28,4f51c0c8ada89f28,일시정지
+reserved_string.text.[match_point],매치 포인트,e4f1f2d34ca92bd1,e4f1f2d34ca92bd1,매치 포인트
+reserved_string.text.[match_quit],메뉴로,9f5b43246b9fde37,9f5b43246b9fde37,메뉴로
+reserved_string.text.[match_rally],랠리 {count},ca60816f971f4632,ca60816f971f4632,랠리 {count}
+reserved_string.text.[match_ready],준비,9ce364fc9c6f2a1c,9ce364fc9c6f2a1c,준비
+reserved_string.text.[match_resume],계속하기,5dfd3b2bc49d9944,5dfd3b2bc49d9944,계속하기
+reserved_string.text.[match_starting],경기 준비 중,1d9398b3232f66fa,1d9398b3232f66fa,경기 준비 중
+reserved_string.text.[match_you],플레이어,8083327eaf04735a,8083327eaf04735a,플레이어
+reserved_string.text.[menu_best_rally],최장 랠리 {rally}회,04d7e25f943e3f0f,04d7e25f943e3f0f,최장 랠리 {rally}회
+reserved_string.text.[menu_no_record],첫 경기를 시작해 보세요,b152c9fe66118be6,b152c9fe66118be6,첫 경기를 시작해 보세요
+reserved_string.text.[menu_options],설정,115bced49291a6a0,115bced49291a6a0,설정
+reserved_string.text.[menu_play],경기 시작,106c5fab1b6457d2,106c5fab1b6457d2,경기 시작
+reserved_string.text.[menu_record],전적 {wins}승 {losses}패,bce19b420106004a,bce19b420106004a,전적 {wins}승 {losses}패
+reserved_string.text.[menu_rule],7점을 먼저 내면 승리,aa9184c55fc3f4e8,aa9184c55fc3f4e8,7점을 먼저 내면 승리
+reserved_string.text.[menu_win_streak],{streak}연승 중,8279e65ff7d00213,8279e65ff7d00213,{streak}연승 중
+reserved_string.text.[network_confirm],확인,1aacb54c49924296,1aacb54c49924296,확인
+reserved_string.text.[network_error_banned],계정 이용이 제한되었습니다.,f8bd4d9d2cb9e96c,f8bd4d9d2cb9e96c,계정 이용이 제한되었습니다.
+reserved_string.text.[network_error_connection],서버에 연결할 수 없습니다.,67e5ccaadfed98b7,67e5ccaadfed98b7,서버에 연결할 수 없습니다.
+reserved_string.text.[network_error_feature_disabled],지금은 이 기능을 쓸 수 없습니다.,2a374ad445db3909,2a374ad445db3909,지금은 이 기능을 쓸 수 없습니다.
+reserved_string.text.[network_error_general],서버 오류가 발생했습니다.,1bc72fefc72067ef,1bc72fefc72067ef,서버 오류가 발생했습니다.
+reserved_string.text.[network_error_invalid_response],서버 응답을 읽을 수 없습니다.,91a38e2da91fbc63,91a38e2da91fbc63,서버 응답을 읽을 수 없습니다.
+reserved_string.text.[network_error_maintenance],서버 점검 중입니다.,f68e0b3df6151276,f68e0b3df6151276,서버 점검 중입니다.
+reserved_string.text.[network_error_rate_limited],요청이 너무 많습니다. 잠시 뒤 다시 시도하세요.,2d32593943316aac,2d32593943316aac,요청이 너무 많습니다. 잠시 뒤 다시 시도하세요.
+reserved_string.text.[network_error_session],세션이 끝났습니다. 다시 로그인하세요.,6b0e13f750738811,6b0e13f750738811,세션이 끝났습니다. 다시 로그인하세요.
+reserved_string.text.[network_error_timeout],서버가 제때 응답하지 않았습니다.,cde7d6353c46da15,cde7d6353c46da15,서버가 제때 응답하지 않았습니다.
+reserved_string.text.[network_go_to_title],타이틀로,ebf1eb5c33b7d645,ebf1eb5c33b7d645,타이틀로
+reserved_string.text.[network_retry],다시 시도,196856a662bd9084,196856a662bd9084,다시 시도
+reserved_string.text.[option_cancel],취소,be876433993ab7ba,be876433993ab7ba,취소
+reserved_string.text.[option_close],닫기,1e8c10206f5b35bd,1e8c10206f5b35bd,닫기
+reserved_string.text.[option_copied],복사했습니다,5e80b233136bd398,5e80b233136bd398,복사했습니다
+reserved_string.text.[option_copy_code],코드 복사,2fd5fe4b1f06d612,2fd5fe4b1f06d612,코드 복사
+reserved_string.text.[option_copy_url],주소 복사,046ea9c5e33a7e67,046ea9c5e33a7e67,주소 복사
+reserved_string.text.[option_copy_user_id],ID 복사,dbb263d9a65540ea,dbb263d9a65540ea,ID 복사
+reserved_string.text.[option_deletion_info],"코드 {code}, {expires_at:datetime}까지 유효합니다. {url} 에서 입력하세요",b13ec8559b9ece4b,b13ec8559b9ece4b,"코드 {code}, {expires_at:datetime}까지 유효합니다. {url} 에서 입력하세요"
+reserved_string.text.[option_deletion_issue],계정 삭제 코드 받기,530d7d872783e86d,530d7d872783e86d,계정 삭제 코드 받기
+reserved_string.text.[option_failed],실패했습니다. 다시 시도해 주세요.,de76c668b153027d,de76c668b153027d,실패했습니다. 다시 시도해 주세요.
+reserved_string.text.[option_licenses],라이선스,8a59fa8b83fe3e97,8a59fa8b83fe3e97,라이선스
+reserved_string.text.[option_privacy],개인정보 처리방침,b4f463f37666c59e,b4f463f37666c59e,개인정보 처리방침
+reserved_string.text.[option_privacy_choices],개인정보 선택,84908379872ae75e,84908379872ae75e,개인정보 선택
+reserved_string.text.[option_terms],이용약관,c7e724d5c4951b72,c7e724d5c4951b72,이용약관
+reserved_string.text.[option_title],설정,115bced49291a6a0,115bced49291a6a0,설정
+reserved_string.text.[option_user_id],사용자 ID: {user_id},399101ecf1feabdf,399101ecf1feabdf,사용자 ID: {user_id}
+reserved_string.text.[option_withdraw],회원 탈퇴,4406c379c287135f,4406c379c287135f,회원 탈퇴
+reserved_string.text.[option_withdraw_confirm],탈퇴할까요? 전적이 지워지고 되돌릴 수 없습니다.,b22316fdb2723631,b22316fdb2723631,탈퇴할까요? 전적이 지워지고 되돌릴 수 없습니다.
+reserved_string.text.[option_withdraw_ok],탈퇴,871d207609515b86,871d207609515b86,탈퇴
+reserved_string.text.[result_longest_rally_hits],이번 경기 최장 랠리 {rally}회 (플레이어 {player} + CPU {cpu}),2ac5d2f0fa710457,2ac5d2f0fa710457,이번 경기 최장 랠리 {rally}회 (플레이어 {player} + CPU {cpu})
+reserved_string.text.[result_lose],패배,b06527e3faf48bfe,b06527e3faf48bfe,패배
+reserved_string.text.[result_menu],메뉴로,9f5b43246b9fde37,9f5b43246b9fde37,메뉴로
+reserved_string.text.[result_new_best],최장 랠리 신기록!,1d12d56c74eeeffa,1d12d56c74eeeffa,최장 랠리 신기록!
+reserved_string.text.[result_record],전적 {wins}승 {losses}패,bce19b420106004a,bce19b420106004a,전적 {wins}승 {losses}패
+reserved_string.text.[result_record_unsaved],이번 경기는 전적에 넣지 못했어요 (전적 {wins}승 {losses}패),8bc2e525aacb99da,8bc2e525aacb99da,이번 경기는 전적에 넣지 못했어요 (전적 {wins}승 {losses}패)
+reserved_string.text.[result_rematch],다시 하기,e2d853eb8de22442,e2d853eb8de22442,다시 하기
+reserved_string.text.[result_saving],기록 저장 중,02b17366bf6b85c2,02b17366bf6b85c2,기록 저장 중
+reserved_string.text.[result_score],{player} : {cpu},473a9b44cc88656e,473a9b44cc88656e,{player} : {cpu}
+reserved_string.text.[result_win],승리!,65cf381a257d1875,65cf381a257d1875,승리!
+reserved_string.text.[result_win_streak],{streak}연승!,3f3a07d3194f339c,3f3a07d3194f339c,{streak}연승!
+reserved_string.text.[scene_prepare_failed],화면을 불러오지 못했습니다.,5c84f7e098772f6e,5c84f7e098772f6e,화면을 불러오지 못했습니다.
+reserved_string.text.[scene_restart],다시 시작,c0128255dc47e432,c0128255dc47e432,다시 시작
+reserved_string.text.[scene_retry],다시 시도,196856a662bd9084,196856a662bd9084,다시 시도
+reserved_string.text.[title_name],패들 듀얼,227b9e186ee6a299,227b9e186ee6a299,패들 듀얼
+reserved_string.text.[title_tagline],"빨라지는 공, 단 한 점의 결투",f66da142428f8051,f66da142428f8051,"빨라지는 공, 단 한 점의 결투"
+reserved_string.text.[ui_exit_cancel],취소,be876433993ab7ba,be876433993ab7ba,취소
+reserved_string.text.[ui_exit_confirm],게임을 종료할까요?,451062c7656b99f3,451062c7656b99f3,게임을 종료할까요?
+reserved_string.text.[ui_exit_quit],종료,086bb5335d174a9a,086bb5335d174a9a,종료
+reserved_string.text.[ui_licenses_close],닫기,1e8c10206f5b35bd,1e8c10206f5b35bd,닫기
+reserved_string.text.[ui_licenses_title],라이선스,8a59fa8b83fe3e97,8a59fa8b83fe3e97,라이선스

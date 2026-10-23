@@ -1,0 +1,110 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://features/title/title_scene.gd" id="1_script"]
+[ext_resource type="Script" path="res://core/safe_area_core/safe_area_ignore.gd" id="2_script"]
+
+[node name="Title" type="Node" node_paths=PackedStringArray("ui_root", "title_label", "tagline_label")]
+script = ExtResource("1_script")
+ui_root = NodePath("UI")
+title_label = NodePath("UI/Box/Title")
+tagline_label = NodePath("UI/Box/Tagline")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.043, 0.059, 0.102, 1)
+
+[node name="SafeAreaIgnore" type="Node" parent="UI/Background"]
+script = ExtResource("2_script")
+
+[node name="LeftPaddle" type="ColorRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -872.0
+offset_top = -195.0
+offset_right = -848.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.302, 0.824, 1, 1)
+
+[node name="RightPaddle" type="ColorRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 848.0
+offset_top = 85.0
+offset_right = 872.0
+offset_bottom = 235.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.361, 0.478, 1)
+
+[node name="Ball" type="ColorRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 368.0
+offset_top = -272.0
+offset_right = 392.0
+offset_bottom = -248.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.827, 0.302, 1)
+
+[node name="Box" type="VBoxContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -700.0
+offset_top = -180.0
+offset_right = 700.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Title" type="Label" parent="UI/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.824, 1, 1)
+theme_override_font_sizes/font_size = 150
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tagline" type="Label" parent="UI/Box"]
+layout_mode = 2
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.62, 0.66, 0.75, 1)
+theme_override_font_sizes/font_size = 44
+horizontal_alignment = 1
+vertical_alignment = 1

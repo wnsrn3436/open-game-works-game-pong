@@ -1,0 +1,48 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://features/match/match_scene.gd" id="1_script"]
+[ext_resource type="Script" path="res://features/match/match_court_view.gd" id="2_script"]
+[ext_resource type="Script" path="res://features/match/match_paddle_view.gd" id="3_script"]
+[ext_resource type="Script" path="res://features/match/match_ball_view.gd" id="4_script"]
+
+[node name="Match" type="Node" node_paths=PackedStringArray("ui_root", "camera", "court", "player_paddle", "cpu_paddle", "ball")]
+script = ExtResource("1_script")
+root_panel = "prefab/match/hud_panel"
+ui_root = NodePath("UI")
+camera = NodePath("World/Camera")
+court = NodePath("World/Court")
+player_paddle = NodePath("World/Court/PlayerPaddle")
+cpu_paddle = NodePath("World/Court/CpuPaddle")
+ball = NodePath("World/Court/Ball")
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Camera" type="Camera2D" parent="World"]
+
+[node name="Court" type="Node2D" parent="World"]
+script = ExtResource("2_script")
+
+[node name="PlayerPaddle" type="Node2D" parent="World/Court" node_paths=PackedStringArray("contact_mark")]
+script = ExtResource("3_script")
+contact_mark = NodePath("ContactMark")
+
+[node name="ContactMark" type="Polygon2D" parent="World/Court/PlayerPaddle"]
+
+[node name="CpuPaddle" type="Node2D" parent="World/Court" node_paths=PackedStringArray("contact_mark")]
+script = ExtResource("3_script")
+contact_mark = NodePath("ContactMark")
+
+[node name="ContactMark" type="Polygon2D" parent="World/Court/CpuPaddle"]
+
+[node name="Ball" type="Node2D" parent="World/Court"]
+visible = false
+script = ExtResource("4_script")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

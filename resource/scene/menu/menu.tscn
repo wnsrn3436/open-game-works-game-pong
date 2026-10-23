@@ -1,0 +1,63 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://features/menu/menu_scene.gd" id="1_script"]
+[ext_resource type="Script" path="res://core/safe_area_core/safe_area_ignore.gd" id="2_script"]
+
+[node name="Menu" type="Node" node_paths=PackedStringArray("ui_root")]
+script = ExtResource("1_script")
+root_panel = "prefab/menu/menu_panel"
+ui_root = NodePath("UI")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Background" type="ColorRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.043, 0.059, 0.102, 1)
+
+[node name="SafeAreaIgnore" type="Node" parent="UI/Background"]
+script = ExtResource("2_script")
+
+[node name="LeftPaddle" type="ColorRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -872.0
+offset_top = 65.0
+offset_right = -848.0
+offset_bottom = 215.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.302, 0.824, 1, 0.5)
+
+[node name="RightPaddle" type="ColorRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 848.0
+offset_top = -255.0
+offset_right = 872.0
+offset_bottom = -105.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.361, 0.478, 0.5)

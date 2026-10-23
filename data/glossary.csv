@@ -1,0 +1,21 @@
+source,id_name,note,source_hash,en
+한국어,[lang_ko],Name of the Korean language in its own language,ea3252281bc3bcec,한국어
+English,[lang_en],Name of the English language,ba118bf7fc9c1aed,English
+W,[prompt_key_w],Keyboard key W,fcb5f40df9be6bae,W
+S,[prompt_key_s],Keyboard key S,8de0b3c47f112c59,S
+↑,[prompt_key_up],Keyboard up arrow key,d2e966bf8db85620,↑
+↓,[prompt_key_down],Keyboard down arrow key,07a2abcd3189716d,↓
+P,[prompt_key_p],Keyboard key P,5c62e091b8c0565f,P
+Esc,[prompt_key_escape],Keyboard Escape key,52f878edb34fa14f,Esc
+십자키 위,[prompt_pad_dpad_up],Gamepad d-pad up,60eebf8cb06aa832,D-pad Up
+십자키 아래,[prompt_pad_dpad_down],Gamepad d-pad down,4d81ef13d0713c5d,D-pad Down
+Start,[prompt_pad_start],Gamepad start button,e4bb9f1ece9af926,Start
+B,[prompt_pad_b],Gamepad B (right face button),df7e70e5021544f4,B
+패들 듀얼,,Game title (temporary name),227b9e186ee6a299,Paddle Duel
+패들,,The bar each side moves up and down to hit the ball,8487144a77e70685,Paddle
+랠리,,Paddle hits in a row before a point ends,5f685f2180116ddc,Rally
+매치 포인트,,The state where one side needs only one more point to win the match,e4f1f2d34ca92bd1,Match Point
+CPU,,The computer opponent on the right side,db9a4c7d4c195ebf,CPU
+W,[prompt_touch_move_up],Key W shown for the move up action,fcb5f40df9be6bae,W
+S,[prompt_touch_move_down],Key S shown for the move down action,8de0b3c47f112c59,S
+P,[prompt_touch_pause],Key P shown for the pause action,5c62e091b8c0565f,P

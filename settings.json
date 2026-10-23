@@ -1,0 +1,268 @@
+{
+  "$schema": "../../open-game-works-core/schemas/game-settings.schema.json",
+  "coreVersion": "0.1.0",
+  "postgresqlMajor": 18,
+  "environments": {
+    "DEV": {
+      "corsAllowedOrigins": [],
+      "adminOperators": [
+        {
+          "name": "ogw",
+          "roles": [
+            "read",
+            "ops",
+            "release"
+          ],
+          "secret": "admin-ogw-dev"
+        },
+        {
+          "name": "wnsrn3436",
+          "roles": [
+            "read",
+            "ops",
+            "release",
+            "privacy"
+          ],
+          "secret": "admin-wnsrn3436-dev"
+        }
+      ],
+      "trustedProxyCount": 1,
+      "adapters": {},
+      "secrets": {
+        "db": "pong-dev-db",
+        "accessTokenKey": "pong-dev-access-token-key",
+        "updateSigningKey": "pong-dev-update-signing-key",
+        "devAccess": "pong-dev-dev-access",
+        "deploySsh": "pong-dev-deploy-ssh",
+        "dbPassword": "pong-dev-db-password"
+      },
+      "deploy": {
+        "user": "deploy",
+        "dir": "/opt/pong-dev",
+        "port": 18080,
+        "host": "pong-deploy.invalid",
+        "hostKey": "ssh-ed25519 AAAAPLACEHOLDERINVALIDHOSTKEY"
+      },
+      "serverUrl": "https://pong-dev.invalid",
+      "updatePublicKeys": [
+        "knB8UKJPcVcq7/lmI8FsQXZU6l5/wZjA9J2C8Hndg18="
+      ]
+    },
+    "STG": {
+      "corsAllowedOrigins": [],
+      "adminOperators": [
+        {
+          "name": "ogw",
+          "roles": [
+            "read",
+            "ops",
+            "release"
+          ],
+          "secret": "admin-ogw-stg"
+        },
+        {
+          "name": "wnsrn3436",
+          "roles": [
+            "read",
+            "ops",
+            "release",
+            "privacy"
+          ],
+          "secret": "admin-wnsrn3436-stg"
+        }
+      ],
+      "secrets": {
+        "db": "pong-stg-db",
+        "accessTokenKey": "pong-stg-access-token-key",
+        "updateSigningKey": "pong-stg-update-signing-key",
+        "deploySsh": "pong-stg-deploy-ssh",
+        "dbPassword": "pong-stg-db-password"
+      },
+      "trustedProxyCount": 1,
+      "adapters": {},
+      "deploy": {
+        "user": "deploy",
+        "dir": "/opt/pong-stg",
+        "port": 18081,
+        "host": "pong-deploy.invalid",
+        "hostKey": "ssh-ed25519 AAAAPLACEHOLDERINVALIDHOSTKEY"
+      },
+      "serverUrl": "https://pong-stg.invalid",
+      "updatePublicKeys": [
+        "SarTkLn3O72tDNnehYLY/UjZKfN2OZrsaSehlUXr/wk="
+      ]
+    },
+    "PROD": {
+      "corsAllowedOrigins": [],
+      "adminOperators": [
+        {
+          "name": "ogw",
+          "roles": [
+            "read"
+          ],
+          "secret": "admin-ogw-prod"
+        },
+        {
+          "name": "wnsrn3436",
+          "roles": [
+            "read",
+            "ops",
+            "release",
+            "privacy"
+          ],
+          "secret": "admin-wnsrn3436-prod"
+        }
+      ],
+      "adapters": {
+        "cdn": "cdn-r2"
+      },
+      "secrets": {
+        "db": "pong-prod-db",
+        "accessTokenKey": "pong-prod-access-token-key",
+        "updateSigningKey": "pong-prod-update-signing-key",
+        "cdn": "pong-prod-cdn"
+      },
+      "trustedProxyCount": 1,
+      "serverUrl": "https://pong.invalid",
+      "cdnR2": {
+        "accountId": "PLACEHOLDER",
+        "bucket": "pong-placeholder",
+        "accessKeyId": "PLACEHOLDER",
+        "publicBaseUrl": "https://cdn.pong.invalid"
+      },
+      "updatePublicKeys": [
+        "nPmNxdzzbXvdZ4rFnzjytCRL1wiMLxSyzkWn+GKXG4A="
+      ]
+    }
+  },
+  "engine": "godot",
+  "coreModules": {
+    "client": [
+      "NativeUiCore",
+      "TweenCore",
+      "ScreenEffectCore",
+      "CameraCore"
+    ],
+    "server": [
+      "play-session"
+    ]
+  },
+  "titleScene": "scene/title/title",
+  "firstScene": "scene/menu/menu",
+  "loadingScreen": "prefab/common/loading_screen",
+  "termsPopup": "prefab/common/terms_popup",
+  "nicknameUnique": false,
+  "buildPlatforms": [
+    "macos"
+  ],
+  "supportedLanguages": [
+    "ko",
+    "en"
+  ],
+  "baseResolution": [
+    1920,
+    1080
+  ],
+  "maxResolution": [
+    2560,
+    1200
+  ],
+  "uiCheckScreens": [
+    {
+      "name": "macbook_air_13",
+      "window": [
+        1440,
+        900
+      ],
+      "fillMode": "Letterbox",
+      "notch": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keyboard": 0
+    },
+    {
+      "name": "macbook_pro_14_notch",
+      "window": [
+        3024,
+        1964
+      ],
+      "fillMode": "Letterbox",
+      "notch": [
+        0,
+        74,
+        0,
+        0
+      ],
+      "keyboard": 0
+    },
+    {
+      "name": "display_16_9",
+      "window": [
+        1920,
+        1080
+      ],
+      "fillMode": "Letterbox",
+      "notch": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keyboard": 0
+    },
+    {
+      "name": "ultrawide_21_9",
+      "window": [
+        3440,
+        1440
+      ],
+      "fillMode": "Crop",
+      "notch": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "keyboard": 0
+    }
+  ],
+  "consent": {
+    "ageConfirmation": false,
+    "privacyChoices": false,
+    "trackingRequest": false,
+    "version": 1
+  },
+  "signing": {
+    "macos": {
+      "certificate": "pong-macos-certificate",
+      "certificatePassword": "pong-macos-certificate-password",
+      "provisioningProfile": "pong-macos-provisioning-profile",
+      "notaryApiKey": "pong-macos-notary-api-key"
+    }
+  },
+  "serverImage": {
+    "repository": "ghcr.io/wnsrn3436/pong-server"
+  },
+  "termsDocuments": {
+    "TERMS": {
+      "version": 1,
+      "url": "https://pong.invalid/terms"
+    },
+    "PRIVACY": {
+      "version": 1,
+      "url": "https://pong.invalid/privacy"
+    }
+  },
+  "gamepadSupported": true,
+  "appId": "io.github.wnsrn3436.pong",
+  "macosNotary": {
+    "keyId": "PLACEHOLDER",
+    "issuerId": "PLACEHOLDER"
+  },
+  "privacy": {
+    "contentData": []
+  }
+}

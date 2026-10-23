@@ -1,0 +1,106 @@
+{
+  "app_icon/main": {
+    "path": "res://resource/app_icon/main.png",
+    "variants": 1
+  },
+  "splash/main": {
+    "path": "res://resource/splash/main.png",
+    "variants": 1
+  },
+  "font/main": {
+    "path": "res://resource/font/main.ttf",
+    "variants": 1
+  },
+  "bgm/menu": {
+    "path": "res://resource/bgm/menu.ogg",
+    "variants": 1
+  },
+  "sfx/ui_click": {
+    "path": "res://resource/sfx/ui_click.wav",
+    "variants": 2
+  },
+  "sfx/paddle_hit": {
+    "path": "res://resource/sfx/paddle_hit.wav",
+    "variants": 3
+  },
+  "sfx/wall_bounce": {
+    "path": "res://resource/sfx/wall_bounce.wav",
+    "variants": 2
+  },
+  "sfx/serve": {
+    "path": "res://resource/sfx/serve.wav",
+    "variants": 1
+  },
+  "sfx/score_player": {
+    "path": "res://resource/sfx/score_player.wav",
+    "variants": 1
+  },
+  "sfx/score_cpu": {
+    "path": "res://resource/sfx/score_cpu.wav",
+    "variants": 1
+  },
+  "sfx/match_win": {
+    "path": "res://resource/sfx/match_win.wav",
+    "variants": 1
+  },
+  "sfx/match_lose": {
+    "path": "res://resource/sfx/match_lose.wav",
+    "variants": 1
+  },
+  "scene/title/title": {
+    "path": "res://resource/scene/title/title.tscn",
+    "variants": 1
+  },
+  "scene/menu/menu": {
+    "path": "res://resource/scene/menu/menu.tscn",
+    "variants": 1
+  },
+  "scene/match/match": {
+    "path": "res://resource/scene/match/match.tscn",
+    "variants": 1
+  },
+  "prefab/menu/menu_panel": {
+    "path": "res://resource/prefab/menu/menu_panel.tscn",
+    "variants": 1
+  },
+  "prefab/menu/option_panel": {
+    "path": "res://resource/prefab/menu/option_panel.tscn",
+    "variants": 1
+  },
+  "prefab/match/hud_panel": {
+    "path": "res://resource/prefab/match/hud_panel.tscn",
+    "variants": 1
+  },
+  "prefab/match/result_panel": {
+    "path": "res://resource/prefab/match/result_panel.tscn",
+    "variants": 1
+  },
+  "prefab/match/pause_popup": {
+    "path": "res://resource/prefab/match/pause_popup.tscn",
+    "variants": 1
+  },
+  "prefab/common/loading_screen": {
+    "path": "res://resource/prefab/common/loading_screen.tscn",
+    "variants": 1
+  },
+  "prefab/common/terms_popup": {
+    "path": "res://resource/prefab/common/terms_popup.tscn",
+    "variants": 1
+  },
+  "tween/match/contact_mark": {
+    "path": "res://resource/tween/match/contact_mark.tres",
+    "variants": 1
+  },
+  "tween/match/paddle_hit": {
+    "path": "res://resource/tween/match/paddle_hit.tres",
+    "variants": 1
+  },
+  "tween/match/score_pop": {
+    "path": "res://resource/tween/match/score_pop.tres",
+    "variants": 1
+  },
+  "tween/match/score_flash": {
+    "path": "res://resource/tween/match/score_flash.tres",
+    "variants": 1
+  }
+}

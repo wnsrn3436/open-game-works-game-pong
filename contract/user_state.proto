@@ -1,0 +1,14 @@
+syntax = "proto3";
+package game;
+
+// The match record of the user against the CPU. No row before the first finished match.
+message MatchRecordUserState {
+  // Matches the player won.
+  int32 wins = 1;
+  // Matches the CPU won.
+  int32 losses = 2;
+  // Paddle hits of the longest rally over all finished matches.
+  int32 best_rally = 3;
+  // Wins in a row up to the last finished match. A loss sets it to 0.
+  int32 win_streak = 4;
+}

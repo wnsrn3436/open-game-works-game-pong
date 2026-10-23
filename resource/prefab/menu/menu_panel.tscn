@@ -1,0 +1,210 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://features/menu/menu_panel.gd" id="1_script"]
+[ext_resource type="Script" path="res://core/ui_core/ui_button.gd" id="2_script"]
+[ext_resource type="Script" path="res://core/ui_core/ui_anchor.gd" id="3_script"]
+
+[sub_resource type="StyleBoxFlat" id="btn_normal"]
+content_margin_left = 24.0
+content_margin_right = 24.0
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.106, 0.141, 0.251, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.302, 0.824, 1, 0.75)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="btn_hover"]
+content_margin_left = 24.0
+content_margin_right = 24.0
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.141, 0.192, 0.353, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.302, 0.824, 1, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="btn_pressed"]
+content_margin_left = 24.0
+content_margin_right = 24.0
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.059, 0.09, 0.188, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.827, 0.302, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="btn_focus"]
+draw_center = false
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.827, 0.302, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 6.0
+expand_margin_top = 6.0
+expand_margin_right = 6.0
+expand_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxFlat" id="frame"]
+bg_color = Color(0.067, 0.09, 0.149, 0.97)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.302, 0.824, 1, 0.35)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="plate"]
+content_margin_left = 28.0
+content_margin_right = 28.0
+content_margin_top = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.043, 0.059, 0.102, 0.82)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[node name="MenuPanel" type="Control" node_paths=PackedStringArray("initial_focus", "title_label", "rule_label", "record_label", "detail_label", "play_button", "option_button", "play_click", "option_click")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+initial_focus = NodePath("Box/Play")
+title_label = NodePath("Box/Title")
+rule_label = NodePath("Box/Rule")
+record_label = NodePath("Box/Record")
+detail_label = NodePath("Box/Detail")
+play_button = NodePath("Box/Play")
+option_button = NodePath("Box/Option")
+play_click = NodePath("Box/Play/UIButton")
+option_click = NodePath("Box/Option/UIButton")
+mouse_filter = 2
+
+[node name="Box" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -600.0
+offset_top = -430.0
+offset_right = 600.0
+offset_bottom = 430.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 22
+alignment = 1
+
+[node name="Title" type="Label" parent="Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.302, 0.824, 1, 1)
+theme_override_font_sizes/font_size = 130
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rule" type="Label" parent="Box"]
+layout_mode = 2
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.62, 0.66, 0.75, 1)
+theme_override_font_sizes/font_size = 38
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gap" type="Control" parent="Box"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Record" type="Label" parent="Box"]
+layout_mode = 2
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_font_sizes/font_size = 44
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Detail" type="Label" parent="Box"]
+layout_mode = 2
+autowrap_mode = 3
+theme_override_colors/font_color = Color(1, 0.827, 0.302, 1)
+theme_override_font_sizes/font_size = 34
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gap2" type="Control" parent="Box"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Play" type="Button" parent="Box"]
+custom_minimum_size = Vector2(560, 110)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_colors/font_hover_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
+theme_override_colors/font_focus_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_font_sizes/font_size = 52
+theme_override_styles/normal = SubResource("btn_normal")
+theme_override_styles/hover = SubResource("btn_hover")
+theme_override_styles/pressed = SubResource("btn_pressed")
+theme_override_styles/focus = SubResource("btn_focus")
+
+[node name="UIButton" type="Node" parent="Box/Play"]
+script = ExtResource("2_script")
+
+[node name="UIAnchor" type="Node" parent="Box/Play"]
+script = ExtResource("3_script")
+anchor_name = "menu_play"
+
+[node name="Option" type="Button" parent="Box"]
+custom_minimum_size = Vector2(560, 84)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_colors/font_hover_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
+theme_override_colors/font_focus_color = Color(0.91, 0.925, 0.957, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("btn_normal")
+theme_override_styles/hover = SubResource("btn_hover")
+theme_override_styles/pressed = SubResource("btn_pressed")
+theme_override_styles/focus = SubResource("btn_focus")
+
+[node name="UIButton" type="Node" parent="Box/Option"]
+script = ExtResource("2_script")
+
+[node name="UIAnchor" type="Node" parent="Box/Option"]
+script = ExtResource("3_script")
+anchor_name = "menu_options"
