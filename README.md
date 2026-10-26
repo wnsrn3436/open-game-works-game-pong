@@ -119,7 +119,6 @@ release the game can use.
 |---|---|
 | [open-game-works-core](https://github.com/wnsrn3436/open-game-works-core) | the harness: agent rules, skills, module specs, the CLI `ogw` |
 | [open-game-works-core-impl](https://github.com/wnsrn3436/open-game-works-core-impl) | the core implementation; core releases are its GitHub Releases |
-| [open-game-works-game-mana-clash](https://github.com/wnsrn3436/open-game-works-game-mana-clash) | another game made with it: a one-on-one card battle game |
 | open-game-works-game-pong | this game |
 
 ## Repository layout

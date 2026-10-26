@@ -114,7 +114,6 @@ core 릴리스로 올린다.
 |---|---|
 | [open-game-works-core](https://github.com/wnsrn3436/open-game-works-core) | 하네스: 에이전트 규칙, 스킬, 모듈 스펙, CLI `ogw` |
 | [open-game-works-core-impl](https://github.com/wnsrn3436/open-game-works-core-impl) | core 구현. core 릴리스는 이 저장소의 GitHub Releases |
-| [open-game-works-game-mana-clash](https://github.com/wnsrn3436/open-game-works-game-mana-clash) | 같은 하네스로 만든 다른 게임: 1대1 카드 배틀 게임 |
 | open-game-works-game-pong | 이 게임 |
 
 ## 저장소 구성
