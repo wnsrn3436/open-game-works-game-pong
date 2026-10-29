@@ -59,7 +59,7 @@ tools/bin/ogw instance stop <id>
 tools/bin/ogw game reference open-game-works-game-pong <reference.md의 YouTube URL>
 ```
 
-<details><summary>첫 DEV 빌드 전에</summary>
+### 첫 DEV 빌드 전에
 
 - `settings.json`에는 시크릿 이름만 있다. `open-game-works-core/`에서
   `tools/bin/ogw secret generate open-game-works-game-pong DEV`를 실행하고, 배포 SSH 키나 `signing.macos`의 macOS
@@ -71,8 +71,6 @@ tools/bin/ogw game reference open-game-works-game-pong <reference.md의 YouTube 
   호스트, `PLACEHOLDER`)이다. 직접 쓸 값으로 바꾸고, `serverImage.repository`와 `appId`도 직접 관리하는 이미지
   저장소와 앱 ID로 바꾼다.
 - macOS 앱은 Xcode 27이 있는 Apple silicon Mac에서 빌드한다.
-
-</details>
 
 ## 만든 방식
 

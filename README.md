@@ -59,7 +59,7 @@ rename the saved `<video id>.mp4` to the name under `## video` in [`reference.md
 tools/bin/ogw game reference open-game-works-game-pong <the YouTube URL in reference.md>
 ```
 
-<details><summary>Before the first DEV build</summary>
+### Before the first DEV build
 
 - `settings.json` holds only secret names. From `open-game-works-core/`, run
   `tools/bin/ogw secret generate open-game-works-game-pong DEV`, then
@@ -71,8 +71,6 @@ tools/bin/ogw game reference open-game-works-game-pong <the YouTube URL in refer
   placeholders (`.invalid` hosts, `PLACEHOLDER`). Replace them, and set `serverImage.repository` and `appId` to an
   image repository and an app ID that you control.
 - The macOS app builds on an Apple silicon Mac with Xcode 27.
-
-</details>
 
 ## How it is built
 
