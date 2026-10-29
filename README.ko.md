@@ -26,10 +26,10 @@ tools/bin/ogw instance stop <id>
 
 ## 게임 소개
 
-왼쪽 패들을 움직여 공을 받아친다. 공은 칠 때마다 조금씩 빨라지고, 패들의 어느 지점에 맞느냐에 따라 돌아가는 각도가
+왼쪽 패들을 움직여 공을 받아친다. 공은 칠 때마다 조금씩 빨라지고 패들의 어느 지점에 맞느냐에 따라 돌아가는 각도가
 정해진다. 가운데에 맞으면 거의 수평으로, 끝에 맞으면 가파르게 돌아간다. CPU는 공이 빠르고 가파를수록 더 자주
-놓치므로, 점수는 긴 랠리 끝에 패들 끝으로 각도를 꺾어 보낸 공에서 나온다. 먼저 7점을 낸 쪽이 이기고, `다시 하기`를
-누르면 다음 경기가 시작되며, 남는 것은 전적(승, 패, 최장 랠리, 연승)뿐이다. 키보드나 게임패드로 하고, 언어는
+놓치므로 점수는 긴 랠리 끝에 패들 끝으로 각도를 꺾어 보낸 공에서 나온다. 먼저 7점을 낸 쪽이 이긴다. `다시 하기`를
+누르면 다음 경기가 시작되며 남는 것은 전적(승, 패, 최장 랠리, 연승)뿐이다. 키보드나 게임패드로 하고 언어는
 한국어(원문)와 영어다.
 
 | 입력 | 동작 |
@@ -41,7 +41,7 @@ tools/bin/ogw instance stop <id>
 
 ## 상태
 
-개발하는 동안 macOS에서 플레이하며 확인했다. 출시용 빌드는 아직 없다. `build`를 한 번도 실행하지 않았다.
+개발하는 동안 macOS에서 플레이하며 확인했다. 출시용 빌드는 아직 없고 `build`도 한 번도 실행하지 않았다.
 
 ## AI로 고치기
 
@@ -52,7 +52,7 @@ tools/bin/ogw instance stop <id>
 | `update game: open-game-works-game-pong <request>` | 사람의 피드백이나 고칠 PROD 문제를 받아 루프로 게임을 고친다 |
 | `build: open-game-works-game-pong DEV` | 코드를 하드닝하고, macOS 앱을 `builds/`에 빌드하고, `dev-<version>` 태그를 붙이고, DEV 서버를 배포한다 |
 
-`update game`에는 레퍼런스 플레이 영상이 필요한데, 영상은 저장소에 없다. 먼저 받아 오고(`yt-dlp` 필요), 저장된
+`update game`에는 레퍼런스 플레이 영상이 필요한데 영상은 저장소에 없다. 먼저 받아 오고(`yt-dlp` 필요) 저장된
 `<video id>.mp4`의 이름을 [`reference.md`](records/setup/reference/reference.md)의 `## video`에 적힌 이름으로 바꾼다.
 
 ```sh
@@ -62,13 +62,13 @@ tools/bin/ogw game reference open-game-works-game-pong <reference.md의 YouTube 
 ### 첫 DEV 빌드 전에
 
 - `settings.json`에는 시크릿 이름만 있다. `open-game-works-core/`에서
-  `tools/bin/ogw secret generate open-game-works-game-pong DEV`를 실행하고, 배포 SSH 키나 `signing.macos`의 macOS
+  `tools/bin/ogw secret generate open-game-works-game-pong DEV`를 실행하고 배포 SSH 키나 `signing.macos`의 macOS
   서명 자료 같은 나머지는 `tools/bin/ogw secret set open-game-works-game-pong <DEV|signing> <name>`으로
   넣는다(값은 표준 입력).
 - 새 호스트에서 `secret generate`는 새 업데이트 서명 공개 키를 `settings.json`의 `updatePublicKeys`에 더한다. 빌드
   전에 이 변경을 커밋한다.
 - `settings.json`의 서버 URL, 배포 호스트와 호스트 키, 약관 문서 URL, CDN 값, 공증 ID는 자리 표시용 값(`.invalid`
-  호스트, `PLACEHOLDER`)이다. 직접 쓸 값으로 바꾸고, `serverImage.repository`와 `appId`도 직접 관리하는 이미지
+  호스트, `PLACEHOLDER`)이다. 직접 쓸 값으로 바꾸고 `serverImage.repository`와 `appId`도 직접 관리하는 이미지
   저장소와 앱 ID로 바꾼다.
 - macOS 앱은 Xcode 27이 있는 Apple silicon Mac에서 빌드한다.
 
@@ -78,7 +78,7 @@ tools/bin/ogw game reference open-game-works-game-pong <reference.md의 YouTube 
 `server/hooks/play_session.ts`가 점수와 최장 랠리를 검사하고 전적을 갱신한다. 게임플레이 값은
 `data/system/game_setting.csv`의 행이다. 이 게임은 core `0.1.0`(`settings.json` `coreVersion`)을 고정한다.
 `client/core/`와 `server/core/`는 [core 릴리스 v0.1.0](https://github.com/wnsrn3436/open-game-works-core-impl/releases/tag/v0.1.0)의
-사본이고, 엔진 버전(Godot 4.7.2)도 그 릴리스가 정한다.
+사본이고 엔진 버전(Godot 4.7.2)도 그 릴리스가 정한다.
 
 | 경로 | 내용 |
 |---|---|

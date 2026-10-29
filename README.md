@@ -22,7 +22,7 @@ tools/bin/ogw instance stop <id>
 ```
 
 After cloning, run `update env` once in a Claude Code or Codex session opened in `open-game-works-core/`: it installs
-the engine of this game's core version.
+the engine that matches this game's core version.
 
 ## The game
 
@@ -30,7 +30,7 @@ You move the left paddle and return a ball that gets a little faster with each h
 sets the return angle: almost flat from the center, steep from the end. The CPU misses more often as the ball gets
 faster and steeper, so points come from a long rally ended by a shot angled off the end of the paddle. The first side
 to 7 points wins; `다시 하기` (Play again) starts the next match, and only your record (wins, losses, best rally, win
-streak) is kept. Keyboard or gamepad; Korean (source text) or English.
+streak) is kept. You play with a keyboard or gamepad, in Korean (source text) or English.
 
 | input | action |
 |---|---|
@@ -41,7 +41,8 @@ streak) is kept. Keyboard or gamepad; Korean (source text) or English.
 
 ## Status
 
-Played and checked on macOS during development. Not built for release yet: `build` has not been run on it.
+The game was played and checked on macOS during development. There is no release build yet, and `build` has never
+been run on it.
 
 ## Change it with AI
 
@@ -49,7 +50,7 @@ Give these commands in a Claude Code or Codex session opened in `open-game-works
 
 | command | what it does |
 |---|---|
-| `update game: open-game-works-game-pong <request>` | changes the game through the loop from your feedback or a PROD problem to fix |
+| `update game: open-game-works-game-pong <request>` | changes the game through the loop from human feedback or a PROD problem to fix |
 | `build: open-game-works-game-pong DEV` | hardens the code, builds the macOS app into `builds/`, tags `dev-<version>`, deploys the DEV server |
 
 `update game` needs the reference gameplay video, which is not in the repository. Fetch it first (needs `yt-dlp`), then
@@ -64,11 +65,11 @@ tools/bin/ogw game reference open-game-works-game-pong <the YouTube URL in refer
 - `settings.json` holds only secret names. From `open-game-works-core/`, run
   `tools/bin/ogw secret generate open-game-works-game-pong DEV`, then
   `tools/bin/ogw secret set open-game-works-game-pong <DEV|signing> <name>` (value from stdin) for the rest, such as the
-  deploy SSH key and the macOS signing material of `signing.macos`.
+  deploy SSH key and the macOS signing material in `signing.macos`.
 - On a new host, `secret generate` adds a new update signing public key to `updatePublicKeys` in `settings.json`.
   Commit that change before the build.
 - Server URLs, deploy hosts and host keys, terms document URLs, CDN values and notary IDs in `settings.json` are
-  placeholders (`.invalid` hosts, `PLACEHOLDER`). Replace them, and set `serverImage.repository` and `appId` to an
+  placeholders (`.invalid` hosts, `PLACEHOLDER`). Replace them with your own values, and set `serverImage.repository` and `appId` to an
   image repository and an app ID that you control.
 - The macOS app builds on an Apple silicon Mac with Xcode 27.
 
@@ -78,7 +79,7 @@ The Godot client runs the match (ball, paddles and CPU, one tick every 10 ms). T
 at match end, `server/hooks/play_session.ts` checks the score and longest rally and updates the record. Gameplay values
 are rows of `data/system/game_setting.csv`. The game pins core `0.1.0` (`settings.json` `coreVersion`): `client/core/`
 and `server/core/` are copies of [core release v0.1.0](https://github.com/wnsrn3436/open-game-works-core-impl/releases/tag/v0.1.0),
-which sets the engine (Godot 4.7.2).
+which also sets the engine version (Godot 4.7.2).
 
 | path | contents |
 |---|---|
@@ -91,7 +92,7 @@ which sets the engine (Godot 4.7.2).
 | [`resource/`](resource) | resources by key; [`resources.csv`](resource/resources.csv) lists each one |
 | [`client/`](client) | Godot project; content code in `boot/`, `common/`, `features/` |
 | [`server/`](server) | TypeScript server; hooks in `hooks/play_session.ts` |
-| [`records/`](records) | process records; now only the reference game record |
+| [`records/`](records) | process records; for now only the reference game record |
 
 Made with the [open-game-works](https://github.com/wnsrn3436/open-game-works-core) harness.
 
