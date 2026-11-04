@@ -34,13 +34,13 @@ The player moves the left cyan paddle to return the ball and scores 7 points bef
 - match start: no ball appears until the server responds (about 100ms~500ms). The paddles do not move either
 - serve wait: the ball stays still at the center for 1200ms after the match starts and for 1000ms after a point (dimmed, with the serve direction display). The paddles move
 - match end: the result screen does not open for about 900ms after the last point and until the record save responds
-- pause popup: while it is open, game time and the match (ball, paddles, CPU, serve wait) stop. In step mode during this time, `ogw step` fails right away with `game time is paused` and no time accumulates. The popup is closed with `tap_anchor pause_resume`, without a step. `P` and `Escape` also open the popup between steps of step mode
+- pause popup: while it is open, game time and the match (ball, paddles, CPU, serve wait) stop. In step mode during this time, `ogw step` fails right away with `game time is paused` and no time accumulates. The popup is closed with `click_anchor pause_resume`, without a step. `P` and `Escape` also open the popup between steps of step mode
 - paddle movement in step mode: the ms of `ogw input <id> key W <ms>` is real time, and game time does not pass during it, so the paddle does not move. The paddle moves with `key_down W` → `ogw step <id> <ms>` → `key_up W` (the same for `S`)
 
 ## fastest start path
 
-1. (new user) terms popup `tap_anchor terms_agree_all` → `tap_anchor terms_confirm`
-2. With no finished match, the match screen opens right after login. If the menu opened, `tap_anchor menu_play`
+1. (new user) terms popup `click_anchor terms_agree_all` → `click_anchor terms_confirm`
+2. With no finished match, the match screen opens right after login. If the menu opened, `click_anchor menu_play`
 3. About 1200ms after the match screen opens, the ball is served
 
 ## play mode
