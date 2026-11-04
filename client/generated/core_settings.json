@@ -92,7 +92,7 @@
   "auth.deletionAttemptsPerMinute": 10,
   "routing.bodyReadTimeoutMs": 10000,
   "routing.userRateLimitPerMinute": 300,
-  "routing.ipRateLimitPerMinute": 60,
+  "routing.ipRateLimitPerMinute": 300,
   "routing.corsPreflightMaxAgeMs": 600000,
   "routing.storageSweepIntervalMs": 60000,
   "testing.maxFixtureBytes": 1048576,
@@ -436,7 +436,7 @@
   "VirtualPadCore.deadZonePermille": 100,
   "VirtualPadCore.sensitivityPermille": 1000,
   "TutorialCore.anchorWaitWarnMs": 5000,
-  "UnitTestCore.testTimeLimitMs": 60000,
+  "UnitTestCore.testTimeLimitMs": 10000,
   "UnitTestCore.runTimeLimitMs": 1800000,
   "NativeUiCore.reviewMinIntervalMs": 2592000000,
   "NativeUiCore.shareTextMaxChars": 2000,
@@ -471,6 +471,20 @@
   "InputCore.padAxisDeadzone": 0.2,
   "QACore.touchIndexCount": 10,
   "QACore.timeScaleMaxPermille": 100000,
+  "LocalizationCore.bodyFontWeight": 0,
+  "LocalizationCore.headingFontWeight": 0,
+  "SoundCore.sfxPitchVariationCents": 50,
+  "SoundCore.sfxVolumeVariationDb": 1.5,
+  "SoundCore.voiceDuckDb": 9,
+  "SoundCore.voiceDuckAttackMs": 150,
+  "SoundCore.voiceDuckReleaseMs": 500,
+  "public-profile.findPerMinute": 10,
+  "QACore.captureJpgQuality": 850,
+  "UnitTestCore.startTimeLimitMs": 120000,
+  "storage.sweepBatchSize": 1000,
+  "storage.sweepTableBudgetMs": 2000,
+  "coupon.maxCodePicks": 100,
+  "matchmaker.roomCodeMaxPicks": 100,
   "termsPopup": "prefab/common/terms_popup",
   "agePopup": "",
   "privacyPopup": "",
@@ -502,69 +516,6 @@
     1920,
     1080
   ],
-  "uiCheckScreens": [
-    {
-      "name": "macbook_air_13",
-      "window": [
-        1440,
-        900
-      ],
-      "fillMode": "Letterbox",
-      "notch": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "keyboard": 0
-    },
-    {
-      "name": "macbook_pro_14_notch",
-      "window": [
-        3024,
-        1964
-      ],
-      "fillMode": "Letterbox",
-      "notch": [
-        0,
-        74,
-        0,
-        0
-      ],
-      "keyboard": 0
-    },
-    {
-      "name": "display_16_9",
-      "window": [
-        1920,
-        1080
-      ],
-      "fillMode": "Letterbox",
-      "notch": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "keyboard": 0
-    },
-    {
-      "name": "ultrawide_21_9",
-      "window": [
-        3440,
-        1440
-      ],
-      "fillMode": "Crop",
-      "notch": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "keyboard": 0
-    }
-  ],
-  "gamepadSupported": true,
   "maxResolution": [
     2560,
     1200
@@ -684,13 +635,13 @@
   "environments.STG.secrets.updateSigningKey": "pong-stg-update-signing-key",
   "environments.PROD.secrets.updateSigningKey": "pong-prod-update-signing-key",
   "environments.DEV.updatePublicKeys": [
-    "NKpDfmxB+B5s4CjCeLiT/i/TDzqxC5SpCnIiWZZVEXI="
+    "knB8UKJPcVcq7/lmI8FsQXZU6l5/wZjA9J2C8Hndg18="
   ],
   "environments.STG.updatePublicKeys": [
-    "ENKz0Tn7qA/yFNDKifBH/URR9eUO6NbYlG6/8i6TAco="
+    "SarTkLn3O72tDNnehYLY/UjZKfN2OZrsaSehlUXr/wk="
   ],
   "environments.PROD.updatePublicKeys": [
-    "mYBWLIQQIyAdURXgRTyyXgEs4qy3iAljghUMsL2IYDw="
+    "nPmNxdzzbXvdZ4rFnzjytCRL1wiMLxSyzkWn+GKXG4A="
   ],
   "environments.DEV.secrets.cdn": "",
   "environments.STG.secrets.cdn": "",
@@ -733,5 +684,5 @@
   "environments.DEV.secrets.db": "pong-dev-db",
   "environments.STG.secrets.db": "pong-stg-db",
   "environments.PROD.secrets.db": "pong-prod-db",
-  "coreVersion": "0.1.0"
+  "coreVersion": "0.7.1"
 }
