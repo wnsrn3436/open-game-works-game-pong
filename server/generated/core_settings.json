@@ -464,7 +464,6 @@
   "QACore.softlockNoResponseInputs": 5,
   "QACore.stepMaxMs": 60000,
   "QACore.frameIntervalMaxCount": 3600,
-  "QACore.rewardPresentationWindowMs": 2000,
   "storage.dbAnswerWaitMs": 5000,
   "AdCore.sdkCallTimeoutMs": 30000,
   "AuthCore.storageCallTimeoutMs": 5000,
@@ -726,5 +725,5 @@
   "environments.DEV.secrets.db": "pong-dev-db",
   "environments.STG.secrets.db": "pong-stg-db",
   "environments.PROD.secrets.db": "pong-prod-db",
-  "coreVersion": "0.11.0"
+  "coreVersion": "0.12.0"
 }
